@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Illustration Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="illustration.html">Illustration</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="photo.html">Photo</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Illustration</h1>
+        <p>Explore my creative illustrations below!</p>
+    </header>
+    <section class="gallery">
+        <div class="gallery-item" onclick="openLightbox('art1.jpg', 'Illustration 1: A serene landscape')">
+            <img src="images/rooster.jpg" alt="Illustration 1">
+            <figcaption>Illustration 1</figcaption>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('art2.jpg', 'Illustration 2: A playful cat')">
+            <img src="images/mushroomabcs.jpg" alt="Illustration 2">
+            <figcaption>Illustration 2</figcaption>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('art3.jpg', 'Illustration 3: A vibrant sunset')">
+            <img src="images/art3.jpg" alt="Illustration 3">
+            <figcaption>Illustration 3</figcaption>
+        </div>
+    </section>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full-size illustration">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Morgan's Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
